@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<JobDef>
+		<defName>BuryOnTheSpot</defName>
+		<driverClass>BuryOnTheSpot.JobDriver_Bury</driverClass>
+		<reportString>burying TargetA.</reportString>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	
+</Defs>

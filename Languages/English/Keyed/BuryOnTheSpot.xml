@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <Bury>Bury {0}</Bury>
+  <BuryOnTheSpot_MouseoverText>Hole containing {0} (disappears in {1})</BuryOnTheSpot_MouseoverText>
+</LanguageData>

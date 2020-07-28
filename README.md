@@ -1,1 +1,1 @@
-# rimworld-bury-on-the-spot
+Rimworld mod, published on Steam workshop: https://steamcommunity.com/sharedfiles/filedetails/?id=2180356108
