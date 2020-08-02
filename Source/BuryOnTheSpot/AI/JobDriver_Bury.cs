@@ -1,12 +1,13 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Verse;
 using Verse.AI;
 
-namespace BuryOnTheSpot
+namespace BuryOnTheSpot.AI
 {
-    class JobDriver_Bury : JobDriver
+    public class JobDriver_Bury : JobDriver
     {
-        private static readonly int Duration = 60000 / 24 * 2;
+        private static readonly int Duration = (int)(60000 / 24 * 0.33);
 
         public override bool TryMakePreToilReservations(bool errorOnFailed)
         {
@@ -30,10 +31,18 @@ namespace BuryOnTheSpot
 
             yield return Toils_General.Do(() =>
             {
-                var holeBuilding = (Building_BuriedThing)ThingMaker.MakeThing(ThingDef.Named("Building_BuriedThing"), null);
-                holeBuilding.contents = (TargetThingA as Corpse)?.InnerPawn?.LabelShort ?? TargetThingA.LabelNoCount;
+                var holeBuilding = TargetLocA.GetThingList(Map)
+                    .FirstOrDefault(t => t is Building_BuriedThing) as Building_BuriedThing;
+
+                if (holeBuilding == null)
+                {
+                    holeBuilding = ThingMaker.MakeThing(ThingDef.Named("Building_BuriedThing"), null) as Building_BuriedThing;
+                    GenSpawn.Spawn(holeBuilding, TargetLocA, Map, Rot4.Random, WipeMode.Vanish);
+                    pawn.Map.edificeGrid?.Register(holeBuilding);
+                }
+                holeBuilding.AddThing((TargetThingA as Corpse)?.InnerPawn?.LabelShort ?? TargetThingA.LabelNoCount);
+                pawn.Map.designationManager?.TryRemoveDesignationOn(TargetThingA, BuryOnTheSpotDefOf.BuryDesignation);
                 TargetThingA.DeSpawn();
-                GenSpawn.Spawn(holeBuilding, TargetLocA, Map, Rot4.Random, WipeMode.Vanish);
             });
 
             yield break;

@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <LanguageData>
-  <Bury>Bury {0}</Bury>
+  <BuryOnTheSpot_Bury>Bury</BuryOnTheSpot_Bury>
+  <BuryOnTheSpot_GizmoDesc>Bury this corpse on the spot, leaving behind a hole which disappears after a while.</BuryOnTheSpot_GizmoDesc>
   <BuryOnTheSpot_MouseoverText>Hole containing {0} (disappears in {1})</BuryOnTheSpot_MouseoverText>
+  <BuryOnTheSpot_MoreContent>{0} and {1} more</BuryOnTheSpot_MoreContent>
 </LanguageData>

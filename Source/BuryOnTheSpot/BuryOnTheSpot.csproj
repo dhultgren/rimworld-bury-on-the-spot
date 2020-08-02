@@ -58,14 +58,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AI\WorkGiver_Bury.cs" />
     <Compile Include="Building_BuriedThing.cs" />
     <Compile Include="BuryOnTheSpot.cs" />
-    <Compile Include="JobDriver_Bury.cs" />
+    <Compile Include="AI\JobDriver_Bury.cs" />
+    <Compile Include="BuryOnTheSpotDefOf.cs" />
+    <Compile Include="Patches\Bury_Gizmo.cs" />
     <Compile Include="Patches\Bury_FloatMenu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -8,7 +8,8 @@ using Verse.AI;
 namespace BuryOnTheSpot
 {
     // Add right click menu to bury corpses
-    [HarmonyPatch(typeof(FloatMenuMakerMap), "AddHumanlikeOrders")]
+    // Replaced with Gizmo
+    /*[HarmonyPatch(typeof(FloatMenuMakerMap), "AddHumanlikeOrders")]
     public class FloatMenuMakerMap_AddHumanlikeOrders
     {
         private static void Postfix(Vector3 clickPos, Pawn pawn, List<FloatMenuOption> opts)
@@ -34,5 +35,5 @@ namespace BuryOnTheSpot
             mapObjectTargetsMustBeAutoAttackable = false,
             validator = (TargetInfo target) => target.Thing is Corpse corpse
         };
-    }
+    }*/
 }
