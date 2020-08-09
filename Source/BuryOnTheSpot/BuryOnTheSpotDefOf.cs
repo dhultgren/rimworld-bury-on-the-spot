@@ -11,5 +11,7 @@ namespace BuryOnTheSpot
         public static WorkGiverDef Bury;
 
         public static JobDef BuryTarget;
+
+        public static ThingDef Building_BuriedThing;
     }
 }

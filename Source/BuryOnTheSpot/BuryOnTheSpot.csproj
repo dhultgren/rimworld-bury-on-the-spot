@@ -65,6 +65,7 @@
     <Compile Include="BuryOnTheSpotDefOf.cs" />
     <Compile Include="Patches\Bury_Gizmo.cs" />
     <Compile Include="Patches\Bury_FloatMenu.cs" />
+    <Compile Include="Patches\Patch_SpawningWipes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
