@@ -51,7 +51,27 @@ namespace BuryOnTheSpot
             age += 250;
             if (age >= TicksBeforeDespawn)
             {
+                if (BuryOnTheSpot.Settings.UpgradeTerrainOnDisappear) UpgradeTerrain();
                 DeSpawn();
+            }
+        }
+
+        private void UpgradeTerrain()
+        {
+            var terr = Map.terrainGrid.TerrainAt(Position);
+            if (terr.fertility <= 0f || terr.fertility >= 1.4f) return;
+
+            if (terr.fertility < 0.7f)
+            {
+                Map.terrainGrid.SetTerrain(Position, TerrainDefOf.Gravel);
+            }
+            else if (terr.fertility < 1f)
+            {
+                Map.terrainGrid.SetTerrain(Position, TerrainDefOf.Soil);
+            }
+            else
+            {
+                Map.terrainGrid.SetTerrain(Position, TerrainDef.Named("SoilRich"));
             }
         }
 

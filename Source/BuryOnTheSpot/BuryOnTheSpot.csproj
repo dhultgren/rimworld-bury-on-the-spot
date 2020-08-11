@@ -63,6 +63,7 @@
     <Compile Include="BuryOnTheSpot.cs" />
     <Compile Include="AI\JobDriver_Bury.cs" />
     <Compile Include="BuryOnTheSpotDefOf.cs" />
+    <Compile Include="BuryOnTheSpotSettings.cs" />
     <Compile Include="Patches\Bury_Gizmo.cs" />
     <Compile Include="Patches\Bury_FloatMenu.cs" />
     <Compile Include="Patches\Patch_SpawningWipes.cs" />
