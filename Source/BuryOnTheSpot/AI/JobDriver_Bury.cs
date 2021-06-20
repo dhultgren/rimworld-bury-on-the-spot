@@ -37,7 +37,7 @@ namespace BuryOnTheSpot.AI
                 if (holeBuilding == null)
                 {
                     holeBuilding = ThingMaker.MakeThing(ThingDef.Named("Building_BuriedThing"), null) as Building_BuriedThing;
-                    GenSpawn.Spawn(holeBuilding, TargetLocA, Map, Rot4.Random, WipeMode.Vanish);
+                    GenSpawn.Spawn(holeBuilding, TargetLocA, Map, Rot4.North, WipeMode.Vanish);
                     pawn.Map.edificeGrid?.Register(holeBuilding);
                 }
                 holeBuilding.AddThing((TargetThingA as Corpse)?.InnerPawn?.LabelShort ?? TargetThingA.LabelNoCount);

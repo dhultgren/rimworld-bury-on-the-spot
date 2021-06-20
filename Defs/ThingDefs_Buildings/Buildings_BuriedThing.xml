@@ -15,7 +15,7 @@
 			<isInert>true</isInert>
             <claimable>false</claimable>
         </building>
-		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<altitudeLayer>Building</altitudeLayer>
         <passability>Standable</passability>
         <selectable>false</selectable>
         <blockWind>false</blockWind>
