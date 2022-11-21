@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuryOnTheSpot", "BuryOnTheSpot\BuryOnTheSpot.csproj", "{5AFFEF34-FDB1-4C35-8448-3B1F511C01AD}"
 EndProject
-Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "RimWorldWin64", "C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\RimWorldWin64.exe", "{28E583B3-67F6-4575-B7D7-62657F2B7D0C}"
+Project("{911E67C6-3D85-4FCE-B560-20A9C3E3FF48}") = "RimWorldWin64", "..\..\..\..\..\Program Files (x86)\Steam\SteamApps\common\RimWorld\RimWorldWin64.exe", "{02A0D77F-86BB-43C1-A58E-8BE40DD28CCB}"
 	ProjectSection(DebuggerProjectSystem) = preProject
 		PortSupplier = 00000000-0000-0000-0000-000000000000
 		Executable = C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\RimWorldWin64.exe
@@ -34,10 +34,10 @@ Global
 		{5AFFEF34-FDB1-4C35-8448-3B1F511C01AD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5AFFEF34-FDB1-4C35-8448-3B1F511C01AD}.Release|x64.ActiveCfg = Release|Any CPU
 		{5AFFEF34-FDB1-4C35-8448-3B1F511C01AD}.Release|x64.Build.0 = Release|Any CPU
-		{28E583B3-67F6-4575-B7D7-62657F2B7D0C}.Debug|Any CPU.ActiveCfg = Release|x64
-		{28E583B3-67F6-4575-B7D7-62657F2B7D0C}.Debug|x64.ActiveCfg = Release|x64
-		{28E583B3-67F6-4575-B7D7-62657F2B7D0C}.Release|Any CPU.ActiveCfg = Release|x64
-		{28E583B3-67F6-4575-B7D7-62657F2B7D0C}.Release|x64.ActiveCfg = Release|x64
+		{02A0D77F-86BB-43C1-A58E-8BE40DD28CCB}.Debug|Any CPU.ActiveCfg = Release|x64
+		{02A0D77F-86BB-43C1-A58E-8BE40DD28CCB}.Debug|x64.ActiveCfg = Release|x64
+		{02A0D77F-86BB-43C1-A58E-8BE40DD28CCB}.Release|Any CPU.ActiveCfg = Release|x64
+		{02A0D77F-86BB-43C1-A58E-8BE40DD28CCB}.Release|x64.ActiveCfg = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
